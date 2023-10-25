@@ -1,0 +1,13 @@
+{
+  "<start>": ["<expr>"],
+  "<expr>": ["<term> + <expr>", "<term> - <expr>", "<term>"],
+  "<term>": ["<factor> * <term>", "<factor> / <term>", "<factor>"],
+  "<factor>": ["<sign-1><factor>", "(<expr>)", "<integer><symbol-1>"],
+  "<sign>": ["+", "-"],
+  "<integer>": ["<digit-1>"],
+  "<digit>": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+  "<symbol>": [".<integer>"],
+  "<sign-1>": ["", "<sign>"],
+  "<symbol-1>": ["", "<symbol>"],
+  "<digit-1>": ["<digit>", "<digit><digit-1>"]
+}
